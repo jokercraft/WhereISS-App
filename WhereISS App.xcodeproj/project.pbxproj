@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0BA32CAD56683AAD04556E /* Pods_WhereISS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE8EE5C64F09EB9AD61C0DD /* Pods_WhereISS_App.framework */; };
 		DAD694BA210106DC007137B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD694B9210106DC007137B9 /* AppDelegate.swift */; };
 		DAD694BC210106DC007137B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD694BB210106DC007137B9 /* ViewController.swift */; };
 		DAD694BF210106DC007137B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD694BD210106DC007137B9 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CE8EE5C64F09EB9AD61C0DD /* Pods_WhereISS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereISS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03F377D4836998A784A41F7 /* Pods-WhereISS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereISS App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereISS App/Pods-WhereISS App.debug.xcconfig"; sourceTree = "<group>"; };
 		DAD694B6210106DC007137B9 /* WhereISS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhereISS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD694B9210106DC007137B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD694BB210106DC007137B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		DAD694C0210106DF007137B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD694C3210106DF007137B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD694C5210106DF007137B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6AF7B0ED006C041B25BB4D5 /* Pods-WhereISS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereISS App.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereISS App/Pods-WhereISS App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0BA32CAD56683AAD04556E /* Pods_WhereISS_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DAFE690954282BC67B5FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8EE5C64F09EB9AD61C0DD /* Pods_WhereISS_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63EA3199B1E4F061BAA019CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A03F377D4836998A784A41F7 /* Pods-WhereISS App.debug.xcconfig */,
+				E6AF7B0ED006C041B25BB4D5 /* Pods-WhereISS App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAD694AD210106DB007137B9 = {
 			isa = PBXGroup;
 			children = (
 				DAD694B8210106DC007137B9 /* WhereISS App */,
 				DAD694B7210106DC007137B9 /* Products */,
+				63EA3199B1E4F061BAA019CC /* Pods */,
+				52DAFE690954282BC67B5FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD694C8210106DF007137B9 /* Build configuration list for PBXNativeTarget "WhereISS App" */;
 			buildPhases = (
+				61F4E405CD3CD82BA016F7E9 /* [CP] Check Pods Manifest.lock */,
 				DAD694B2210106DC007137B9 /* Sources */,
 				DAD694B3210106DC007137B9 /* Frameworks */,
 				DAD694B4210106DC007137B9 /* Resources */,
+				85CF7EDA8AD0B8D5310EF18E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61F4E405CD3CD82BA016F7E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhereISS App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85CF7EDA8AD0B8D5310EF18E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhereISS App/Pods-WhereISS App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereISS App/Pods-WhereISS App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAD694B2210106DC007137B9 /* Sources */ = {
@@ -278,6 +349,7 @@
 		};
 		DAD694C9210106DF007137B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03F377D4836998A784A41F7 /* Pods-WhereISS App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +368,7 @@
 		};
 		DAD694CA210106DF007137B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AF7B0ED006C041B25BB4D5 /* Pods-WhereISS App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

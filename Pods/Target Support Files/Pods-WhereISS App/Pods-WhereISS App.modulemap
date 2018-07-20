@@ -1,0 +1,6 @@
+framework module Pods_WhereISS_App {
+  umbrella header "Pods-WhereISS App-umbrella.h"
+
+  export *
+  module * { export * }
+}
